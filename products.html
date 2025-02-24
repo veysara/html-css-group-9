@@ -1,0 +1,632 @@
+<!doctype html>
+<html lang="zxx">
+
+<head>
+  <!-- metas -->
+  <meta charset="utf-8">
+  <meta name="author" content="pxdraft">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="keywords" content="Furnart – Furniture & Interior Design Template">
+  <meta name="description" content="Furnart – Furniture & Interior Design Template">
+  <!-- title -->
+  <title>Furniture G9.</title>
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="assets/img/favicon.ico">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <!-- CSS Template -->
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="wrapper">
+    <!-- Header -->
+    <header class="main-header main-header-01 headroom navbar-light fixed-top navbar-transparent">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <!-- Logo -->
+          <a class="navbar-brand header-navbar-brand" href="index.html">
+            FURNITURE G9
+          </a>
+          <!-- Logo -->
+
+          <!-- Menu -->
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas_Header_01" aria-labelledby="offcanvas_Header_01Label">
+            <div class="offcanvas-header">
+              <div class="offcanvas-title" id="offcanvas_Header_01Label">
+                <img src="assets/img/logo.svg" title="" alt="">
+              </div>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a href="index.html" class="nav-link pe-5 ps-5">Home</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link pe-5">About</a></li>
+                <li class="nav-item dropdown dropdown-hover"><a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" class="pe-5">Products</a>
+                  <ul class="dropdown-menu start">
+                    <li><a class="dropdown-item" href="services.html">Explore Design</a></li>
+                    <li><a class="dropdown-item" href="products.html">Products</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item"><a href="team.html" class="nav-link ps-5 pe-5">Team</a></li>
+                <li class="nav-item"><a href="contact-us.html" class="nav-link pe-5">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- End Menu -->
+          <div class="nav d-flex ps-4">
+            <!-- Mobile Toggle -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas_Header_01"
+              aria-controls="offcanvas_Header_01" aria-label="Toggle navigation"><span class="toggler-icon"></span></button>
+            <!-- End Mobile Toggle -->
+            <div class="container">
+                <div class="d-flex justify-content-between">
+                  <div class="position-relative">
+                    <a href="checkout.html" class="btn btn-primary">
+                      <i class="bi bi-cart"></i> Cart
+                      <span id="cart-count" class="cart-alert d-none">0</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main -->
+    <main>
+      <!-- Banner -->
+      <section class="bg-center bg-no-repeat position-relative mb-5 top-0 bg-cover" style="background-image: url(assets/img/pro.png)">
+        <div class="container position-relative">
+          <div class="row align-items-center justify-content-center section">
+            <div class="col-lg-7 text-center">
+              <h1 class="display-2 text-white mb-4 text-uppercase welcome">Our Products</h1>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div class="photo">
+        <div class="container my-5 photo">
+            <div class="text-center mb-4">
+              <h3 class="text-primary">Product</h3>
+              <p class="text-muted">Check your favorite furniture and buy now</p>
+            </div>
+          
+            <div class="row" id="content-row">
+              <!-- Left Column -->
+              <div class="col-md-3">
+                <div class="list-group">
+                  <a href="#" class="list-group-item list-group-item-action active" aria-current="true">All Product</a>
+                  <a href="#" class="list-group-item list-group-item-action" onclick="bed()">Bed</a>
+                  <a href="#" class="list-group-item list-group-item-action" onclick="chair()">Chair</a>
+                  <a href="#" class="list-group-item list-group-item-action" onclick="table()">Table</a>
+                  <a href="#" class="list-group-item list-group-item-action" onclick="sofa()">Sofa</a>
+                  <a href="#" class="list-group-item list-group-item-action" onclick="workart()">WorkArt</a>
+                </div>
+              </div>
+          
+              <!-- Right Column -->
+              <div class="col-md-9">
+                <div class="row">
+                <!--product-->
+                  <!-- Card Section -->
+                    <div class="col-md-4">
+                        <div class="card">
+                        <img src="./assets/img/bed4.png" class="card-img-top" alt="bed1">
+                        <div class="card-body text-center">
+                            <p class="card-text">
+                            <strong>Description:</strong> White Bed
+                            </p>
+                            <p class="card-text">
+                            <strong>Price:</strong> $50.00
+                            </p>
+                            <p class="card-text">
+                            <strong>Rating:</strong> 
+                            <span class="text-warning">&#9733;&#9733;&#9733;&#9733;&#9734;</span> <!-- Example 4 out of 5 stars -->
+                            </p>
+                            <div class="d-flex justify-content-center gap-2">
+                            <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#imageModal">View</button>
+                            <button class="btn btn-success btn-sm">Add to Cart</button>
+                            </div>
+                        </div>
+                        </div>
+                        <p class="text-center">White Bed</p>
+                    </div>
+                    
+                    <!-- Modal Section -->
+                    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h5 class="modal-title" id="imageModalLabel">White Bed</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body text-center">
+                            <img src="./assets/img/bed.jpg" class="img-fluid" alt="White Bed">
+                            </div>
+                                
+                                <div class="card-text text-center">
+                                <p><strong>Price</strong></p>
+                                <p class="text-primary fs-1 fw-bold">150 $</p>
+                                </div>
+                                <p class="card-text text-center">
+                                <strong>Rating:</strong> 
+                                <span class="text-warning">&#9733;&#9733;&#9733;&#9733;&#9734;</span> <!-- Example 4 out of 5 stars -->
+                                </p>
+
+                                <button class="bg-success border-0 mb-5 ms-5 me-5 fs-4 text-white">Add to Cart</button>
+
+                        </div>
+                        </div>
+                    </div>   
+                    <!--product-->
+                  <!-- Card Section -->
+                  <div class="col-md-4">
+                    <div class="card">
+                    <img src="./assets/img/chair3.png" class="card-img-top" alt="bed1">
+                    <div class="card-body text-center">
+                        <p class="card-text">
+                        <strong>Description:</strong> White Bed
+                        </p>
+                        <p class="card-text">
+                        <strong>Price:</strong> $50.00
+                        </p>
+                        <p class="card-text">
+                        <strong>Rating:</strong> 
+                        <span class="text-warning">&#9733;&#9733;&#9733;&#9733;&#9734;</span> <!-- Example 4 out of 5 stars -->
+                        </p>
+                        <div class="d-flex justify-content-center gap-2">
+                        <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#imageModal">View</button>
+                        <button class="btn btn-success btn-sm">Add to Cart</button>
+                        </div>
+                    </div>
+                    </div>
+                    <p class="text-center">White Bed</p>
+                </div>
+                
+                <!-- Modal Section -->
+                <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="imageModalLabel">White Bed</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body text-center">
+                        <img src="./assets/img/chair3.png" class="img-fluid" alt="White Bed">
+                        </div>
+                            
+                            <div class="card-text text-center">
+                            <p><strong>Price</strong></p>
+                            <p class="text-primary fs-1 fw-bold">150 $</p>
+                            </div>
+                            <p class="card-text text-center">
+                            <strong>Rating:</strong> 
+                            <span class="text-warning">&#9733;&#9733;&#9733;&#9733;&#9734;</span> <!-- Example 4 out of 5 stars -->
+                            </p>
+
+                            <button class="bg-success border-0 mb-5 ms-5 me-5 fs-4 text-white">Add to Cart</button>
+
+                    </div>
+                    </div>
+                </div>  
+                    <div class="col-md-4">
+                        <div class="card">
+                        <img src="./assets/img/table4.png" class="card-img-top" alt="bed1">
+                        <div class="card-body text-center">
+                            <p class="card-text">
+                            <strong>Description:</strong> White Bed
+                            </p>
+                            <p class="card-text">
+                            <strong>Price:</strong> $50.00
+                            </p>
+                            <p class="card-text">
+                            <strong>Rating:</strong> 
+                            <span class="text-warning">&#9733;&#9733;&#9733;&#9733;&#9734;</span> <!-- Example 4 out of 5 stars -->
+                            </p>
+                            <div class="d-flex justify-content-center gap-2">
+                            <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#imageModal">View</button>
+                            <button class="btn btn-success btn-sm">Add to Cart</button>
+                            </div>
+                        </div>
+                        </div>
+                        <p class="text-center">White Bed</p>
+                    </div>
+                    
+                    <!-- Modal Section -->
+                    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h5 class="modal-title" id="imageModalLabel">White Bed</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body text-center">
+                            <img src="./assets/img/table4.png" class="img-fluid" alt="White Bed">
+                            </div>
+                                
+                                <div class="card-text text-center">
+                                <p><strong>Price</strong></p>
+                                <p class="text-primary fs-1 fw-bold">150 $</p>
+                                </div>
+                                <p class="card-text text-center">
+                                <strong>Rating:</strong> 
+                                <span class="text-warning">&#9733;&#9733;&#9733;&#9733;&#9734;</span> <!-- Example 4 out of 5 stars -->
+                                </p>
+
+                                <button class="bg-success border-0 mb-5 ms-5 me-5 fs-4 text-white">Add to Cart</button>
+
+                        </div>
+                        </div>
+                    </div>  
+                    <div class="col-md-4">
+                        <div class="card">
+                        <img src="./assets/img/chair5.png" class="card-img-top" alt="bed1">
+                        <div class="card-body text-center">
+                            <p class="card-text">
+                            <strong>Description:</strong> White Bed
+                            </p>
+                            <p class="card-text">
+                            <strong>Price:</strong> $50.00
+                            </p>
+                            <p class="card-text">
+                            <strong>Rating:</strong> 
+                            <span class="text-warning">&#9733;&#9733;&#9733;&#9733;&#9734;</span> <!-- Example 4 out of 5 stars -->
+                            </p>
+                            <div class="d-flex justify-content-center gap-2">
+                            <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#imageModal">View</button>
+                            <button class="btn btn-success btn-sm">Add to Cart</button>
+                            </div>
+                        </div>
+                        </div>
+                        <p class="text-center">White Bed</p>
+                    </div>
+                    
+                    <!-- Modal Section -->
+                    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h5 class="modal-title" id="imageModalLabel">White Bed</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body text-center">
+                            <img src="./assets/img/chair5.png" class="img-fluid" alt="White Bed">
+                            </div>
+                                
+                                <div class="card-text text-center">
+                                <p><strong>Price</strong></p>
+                                <p class="text-primary fs-1 fw-bold">150 $</p>
+                                </div>
+                                <p class="card-text text-center">
+                                <strong>Rating:</strong> 
+                                <span class="text-warning">&#9733;&#9733;&#9733;&#9733;&#9734;</span> <!-- Example 4 out of 5 stars -->
+                                </p>
+
+                                <button class="bg-success border-0 mb-5 ms-5 me-5 fs-4 text-white">Add to Cart</button>
+
+                        </div>
+                        </div>
+                    </div>  
+                    <div class="col-md-4">
+                        <div class="card">
+                        <img src="./assets/img/sofa4.png" class="card-img-top" alt="bed1">
+                        <div class="card-body text-center">
+                            <p class="card-text">
+                            <strong>Description:</strong> White Bed
+                            </p>
+                            <p class="card-text">
+                            <strong>Price:</strong> $50.00
+                            </p>
+                            <p class="card-text">
+                            <strong>Rating:</strong> 
+                            <span class="text-warning">&#9733;&#9733;&#9733;&#9733;&#9734;</span> <!-- Example 4 out of 5 stars -->
+                            </p>
+                            <div class="d-flex justify-content-center gap-2">
+                            <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#imageModal">View</button>
+                            <button class="btn btn-success btn-sm">Add to Cart</button>
+                            </div>
+                        </div>
+                        </div>
+                        <p class="text-center">White Bed</p>
+                    </div>
+                    
+                    <!-- Modal Section -->
+                    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h5 class="modal-title" id="imageModalLabel">White Bed</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body text-center">
+                            <img src="./assets/img/sofa4.png" class="img-fluid" alt="White Bed">
+                            </div>
+                                
+                                <div class="card-text text-center">
+                                <p><strong>Price</strong></p>
+                                <p class="text-primary fs-1 fw-bold">150 $</p>
+                                </div>
+                                <p class="card-text text-center">
+                                <strong>Rating:</strong> 
+                                <span class="text-warning">&#9733;&#9733;&#9733;&#9733;&#9734;</span> <!-- Example 4 out of 5 stars -->
+                                </p>
+
+                                <button class="bg-success border-0 mb-5 ms-5 me-5 fs-4 text-white">Add to Cart</button>
+
+                        </div>
+                        </div>
+                    </div>  
+                    <div class="col-md-4">
+                      <div class="card">
+                      <img src="./assets/img/bed4.png" class="card-img-top" alt="bed1">
+                      <div class="card-body text-center">
+                          <p class="card-text">
+                          <strong>Description:</strong> White Bed
+                          </p>
+                          <p class="card-text">
+                          <strong>Price:</strong> $50.00
+                          </p>
+                          <p class="card-text">
+                          <strong>Rating:</strong> 
+                          <span class="text-warning">&#9733;&#9733;&#9733;&#9733;&#9734;</span> <!-- Example 4 out of 5 stars -->
+                          </p>
+                          <div class="d-flex justify-content-center gap-2">
+                          <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#imageModal">View</button>
+                          <button class="btn btn-success btn-sm">Add to Cart</button>
+                          </div>
+                      </div>
+                      </div>
+                      <p class="text-center">White Bed</p>
+                  </div>
+                  
+                  <!-- Modal Section -->
+                  <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content">
+                          <div class="modal-header">
+                          <h5 class="modal-title" id="imageModalLabel">White Bed</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body text-center">
+                          <img src="./assets/img/bed.jpg" class="img-fluid" alt="White Bed">
+                          </div>
+                              
+                              <div class="card-text text-center">
+                              <p><strong>Price</strong></p>
+                              <p class="text-primary fs-1 fw-bold">150 $</p>
+                              </div>
+                              <p class="card-text text-center">
+                              <strong>Rating:</strong> 
+                              <span class="text-warning">&#9733;&#9733;&#9733;&#9733;&#9734;</span> <!-- Example 4 out of 5 stars -->
+                              </p>
+
+                              <button class="bg-success border-0 mb-5 ms-5 me-5 fs-4 text-white">Add to Cart</button>
+
+                      </div>
+                      </div>
+                  </div>   
+                  <!--product-->
+                <!-- Card Section -->
+                <div class="col-md-4">
+                  <div class="card">
+                  <img src="./assets/img/chair3.png" class="card-img-top" alt="bed1">
+                  <div class="card-body text-center">
+                      <p class="card-text">
+                      <strong>Description:</strong> White Bed
+                      </p>
+                      <p class="card-text">
+                      <strong>Price:</strong> $50.00
+                      </p>
+                      <p class="card-text">
+                      <strong>Rating:</strong> 
+                      <span class="text-warning">&#9733;&#9733;&#9733;&#9733;&#9734;</span> <!-- Example 4 out of 5 stars -->
+                      </p>
+                      <div class="d-flex justify-content-center gap-2">
+                      <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#imageModal">View</button>
+                      <button class="btn btn-success btn-sm">Add to Cart</button>
+                      </div>
+                  </div>
+                  </div>
+                  <p class="text-center">White Bed</p>
+              </div>
+              
+              <!-- Modal Section -->
+              <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                      <div class="modal-header">
+                      <h5 class="modal-title" id="imageModalLabel">White Bed</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body text-center">
+                      <img src="./assets/img/chair3.png" class="img-fluid" alt="White Bed">
+                      </div>
+                          
+                          <div class="card-text text-center">
+                          <p><strong>Price</strong></p>
+                          <p class="text-primary fs-1 fw-bold">150 $</p>
+                          </div>
+                          <p class="card-text text-center">
+                          <strong>Rating:</strong> 
+                          <span class="text-warning">&#9733;&#9733;&#9733;&#9733;&#9734;</span> <!-- Example 4 out of 5 stars -->
+                          </p>
+
+                          <button class="bg-success border-0 mb-5 ms-5 me-5 fs-4 text-white">Add to Cart</button>
+
+                  </div>
+                  </div>
+              </div>  
+                  <div class="col-md-4">
+                      <div class="card">
+                      <img src="./assets/img/table4.png" class="card-img-top" alt="bed1">
+                      <div class="card-body text-center">
+                          <p class="card-text">
+                          <strong>Description:</strong> White Bed
+                          </p>
+                          <p class="card-text">
+                          <strong>Price:</strong> $50.00
+                          </p>
+                          <p class="card-text">
+                          <strong>Rating:</strong> 
+                          <span class="text-warning">&#9733;&#9733;&#9733;&#9733;&#9734;</span> <!-- Example 4 out of 5 stars -->
+                          </p>
+                          <div class="d-flex justify-content-center gap-2">
+                          <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#imageModal">View</button>
+                          <button class="btn btn-success btn-sm">Add to Cart</button>
+                          </div>
+                      </div>
+                      </div>
+                      <p class="text-center">White Bed</p>
+                  </div>
+                  
+                  <!-- Modal Section -->
+                  <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content">
+                          <div class="modal-header">
+                          <h5 class="modal-title" id="imageModalLabel">White Bed</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body text-center">
+                          <img src="./assets/img/table4.png" class="img-fluid" alt="White Bed">
+                          </div>
+                              
+                              <div class="card-text text-center">
+                              <p><strong>Price</strong></p>
+                              <p class="text-primary fs-1 fw-bold">150 $</p>
+                              </div>
+                              <p class="card-text text-center">
+                              <strong>Rating:</strong> 
+                              <span class="text-warning">&#9733;&#9733;&#9733;&#9733;&#9734;</span> <!-- Example 4 out of 5 stars -->
+                              </p>
+
+                              <button class="bg-success border-0 mb-5 ms-5 me-5 fs-4 text-white">Add to Cart</button>
+
+                      </div>
+                      </div>
+                  </div>  
+                  <div class="col-md-4">
+                      <div class="card">
+                      <img src="./assets/img/chair5.png" class="card-img-top" alt="bed1">
+                      <div class="card-body text-center">
+                          <p class="card-text">
+                          <strong>Description:</strong> White Bed
+                          </p>
+                          <p class="card-text">
+                          <strong>Price:</strong> $50.00
+                          </p>
+                          <p class="card-text">
+                          <strong>Rating:</strong> 
+                          <span class="text-warning">&#9733;&#9733;&#9733;&#9733;&#9734;</span> <!-- Example 4 out of 5 stars -->
+                          </p>
+                          <div class="d-flex justify-content-center gap-2">
+                          <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#imageModal">View</button>
+                          <button class="btn btn-success btn-sm">Add to Cart</button>
+                          </div>
+                      </div>
+                      </div>
+                      <p class="text-center">White Bed</p>
+                  </div>
+                  
+                  <!-- Modal Section -->
+                  <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content">
+                          <div class="modal-header">
+                          <h5 class="modal-title" id="imageModalLabel">White Bed</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body text-center">
+                          <img src="./assets/img/chair5.png" class="img-fluid" alt="White Bed">
+                          </div>
+                              
+                              <div class="card-text text-center">
+                              <p><strong>Price</strong></p>
+                              <p class="text-primary fs-1 fw-bold">150 $</p>
+                              </div>
+                              <p class="card-text text-center">
+                              <strong>Rating:</strong> 
+                              <span class="text-warning">&#9733;&#9733;&#9733;&#9733;&#9734;</span> <!-- Example 4 out of 5 stars -->
+                              </p>
+
+                              <button class="bg-success border-0 mb-5 ms-5 me-5 fs-4 text-white">Add to Cart</button>
+
+                      </div>
+                      </div>
+                  </div>  
+                    <div class="col-md-4">
+                        <div class="card">
+                        <img src="./assets/img/bed3.png" class="card-img-top" alt="bed1">
+                        <div class="card-body text-center">
+                            <p class="card-text">
+                            <strong>Description:</strong> White Bed
+                            </p>
+                            <p class="card-text">
+                            <strong>Price:</strong> $50.00
+                            </p>
+                            <p class="card-text">
+                            <strong>Rating:</strong> 
+                            <span class="text-warning">&#9733;&#9733;&#9733;&#9733;&#9734;</span> <!-- Example 4 out of 5 stars -->
+                            </p>
+                            <div class="d-flex justify-content-center gap-2">
+                            <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#imageModal">View</button>
+                            <button class="btn btn-success btn-sm">Add to Cart</button>
+                            </div>
+                        </div>
+                        </div>
+                        <p class="text-center">White Bed</p>
+                    </div>
+                    
+                    <!-- Modal Section -->
+                    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h5 class="modal-title" id="imageModalLabel">White Bed</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body text-center">
+                            <img src="./assets/img/bed3.png" class="img-fluid" alt="White Bed">
+                            </div>
+                                
+                                <div class="card-text text-center">
+                                <p><strong>Price</strong></p>
+                                <p class="text-primary fs-1 fw-bold">150 $</p>
+                                </div>
+                                <p class="card-text text-center">
+                                <strong>Rating:</strong> 
+                                <span class="text-warning">&#9733;&#9733;&#9733;&#9733;&#9734;</span> <!-- Example 4 out of 5 stars -->
+                                </p>
+
+                                <button class="bg-success border-0 mb-5 ms-5 me-5 fs-4 text-white">Add to Cart</button>
+
+                        </div>
+                        </div>
+                    </div>                  
+                </div>
+                
+              </div>
+            </div>
+          </div>
+    </div>
+    
+      
+      
+  </div>
+
+  <!-- Scripts -->
+  <script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/headroom/headroom.min.js"></script>
+  <script src="assets/vendor/timezz/timezz.js"></script>
+  <script src="./assets/js/theme.js"></script>
+</body>
+
+</html>

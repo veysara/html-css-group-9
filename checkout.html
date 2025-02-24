@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+  <div class="container my-5">
+    <h1 class="text-center mb-4">Checkout</h1>
+
+    <!-- Cart Items Table -->
+    <div id="cart-items">
+      <table class="table table-bordered text-center">
+        <thead>
+          <tr>
+            <th>Product Name</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody id="cart-body">
+          <!-- Dynamically populated cart items -->
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Total and Action Buttons -->
+    <div class="total-section">
+      <div class="d-flex justify-content-between align-items-center">
+        <h3>Total: $<span id="total-price">0</span></h3>
+      </div>
+      <div class="cart-buttons">
+        <button id="pay-button" class="btn btn-success">Pay</button>
+        <button id="reset-button" class="btn btn-danger">Reset</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Load cart items from localStorage
+    function loadCartItems() {
+      const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+      const cartBody = document.getElementById('cart-body');
+      const totalPriceElement = document.getElementById('total-price');
+      
+      cartBody.innerHTML = ''; // Clear the table body
+      let totalPrice = 0;
+
+      cartItems.forEach(item => {
+        const row = document.createElement('tr');
+        row.innerHTML = `
+          <td>${item.name}</td>
+          <td>$${item.price}</td>
+        `;
+        cartBody.appendChild(row);
+        totalPrice += parseFloat(item.price);
+      });
+
+      totalPriceElement.textContent = totalPrice.toFixed(2); // Update total price
+    }
+
+    // Pay button functionality
+    document.getElementById('pay-button').addEventListener('click', () => {
+      alert('Payment successful! Thank you for your purchase.');
+      localStorage.removeItem('cartItems'); // Clear cart items
+      loadCartItems(); // Refresh the cart
+    });
+
+    // Reset button functionality
+    document.getElementById('reset-button').addEventListener('click', () => {
+      localStorage.removeItem('cartItems'); // Clear cart items
+      alert('Cart has been reset.');
+      loadCartItems(); // Refresh the cart
+    });
+
+    // Load cart items when the page loads
+    window.onload = loadCartItems;
+  </script>
+</body>
+
+</html>
